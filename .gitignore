@@ -1,0 +1,56 @@
+# Quarto
+/.quarto/
+/_site/
+/_book/
+*_files/
+.jupyter_cache/
+*.quarto_ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.python-version
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# JetBrains / IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Environment and secrets
+.env
+.env.*
