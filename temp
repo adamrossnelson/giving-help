@@ -1,0 +1,9 @@
+- Specfy the null and alternative hypotheses
+- Answer the research question in the terms implied by the question
+  - For a yes or no question give a yes or no response.
+  - The first word of the answer should be a yes or no.
+- Use Quarto's cross references to point specifically to the specific figure.
+- Better elaborate on the data used (one sentence really).
+- Triangulate results with additional analyses or methods
+  - Add a regression analysis
+  - Add a correlation analysis

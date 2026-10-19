@@ -1,0 +1,48 @@
+---
+title: "Finding Relationships between . . . (Asking For Help)"
+subtitle: "A hypothetical memo written by a student researcher who needs help interpreting the output or enhancing the analysis"
+---
+
+```{python}
+# Standard imports, set display, load data
+import pandas as pd
+import seaborn as sns
+
+sns.set_context('talk')
+
+df = sns.load_dataset("geyser")
+```
+
+# Research Or Analytical Question
+
+RQ: Is there a relationship between the duration of an eruption and the time between eruptions?
+
+# Answer, Response, + Summary of Results
+
+The scatterplot shows that as one variable increases, so to does the other.
+
+```{python}
+#| tbl-label: tbl-geyser
+#| tbl-cap: "A sample of five random observatinons from the geyser dataset"
+
+# Inspect a sample of the data
+df.sample(5)
+```
+
+
+```{python}
+#| fig-label: fig-wait-length
+#| fig-cap: "Comparing the duration of a the waiting time between eruptions."
+
+# Create the scatterplot between the dependent and independent variables
+ax = sns.scatterplot(data=df, x="duration", y="waiting")
+ax.set_xlabel("Duration (minutes)")
+ax.set_ylabel("Waiting (minutes)")
+```
+
+# What questions or uncertainties remain?
+
+- Does a relationship mean that a longer eruption causes a longer wait? Or can I only say they go together?
+- How many eruptions are in this dataset? Is that enough to trust the pattern? I only looked at five rows.
+- Collect more data from other geysers (perhaps other regions), to see whether the relationship is specific to this region.
+- Add additional variables to the analysis (time of day, season, temperature).
