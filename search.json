@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "AGENTS.html",
+    "href": "AGENTS.html",
+    "title": "Project notes",
+    "section": "",
+    "text": "Project notes\n\nEdit index.qmd (the source). quarto preview generates the HTML; don’t treat _site/ as the source of truth.\nCode cell labels: use #| fig-label: fig-... for figures and #| tbl-label: tbl-... for tables, not #| label: .... With #| label: fig-..., the fig-wait-length cell rendered as sub-figures. Switching to fig-label fixed it (confirmed by the project owner)."
+  },
+  {
+    "objectID": "ReadMe.html",
+    "href": "ReadMe.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Overview\nThis project which can be viewed as a website here:\n\nSpecfy the null and alternative hypotheses\nAnswer the research question in the terms implied by the question\n\nFor a yes or no question give a yes or no response.\nThe first word of the answer should be a yes or no.\n\nUse Quarto’s cross references to point specifically to the specific figure.\nBetter elaborate on the data used (one sentence really).\nTriangulate results with additional analyses or methods\n\nAdd a regression analysis\nAdd a correlation analysis"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Finding Relationships between . . . (Asking For Help)",
+    "section": "",
+    "text": "# Standard imports, set display, load data\nimport pandas as pd\nimport seaborn as sns\n\nsns.set_context('talk')\n\ndf = sns.load_dataset(\"geyser\")\n\n\nResearch Or Analytical Question\nRQ: Is there a relationship between the duration of an eruption and the time between eruptions?\n\n\nAnswer, Response, + Summary of Results\nThe scatterplot shows that as one variable increases, so to does the other.\n\n# Inspect a sample of the data\ndf.sample(5)\n\n\n\n\n\nA sample of five random observatinons from the geyser dataset\n\n\n\nduration\nwaiting\nkind\n\n\n\n\n267\n4.117\n81\nlong\n\n\n85\n4.933\n88\nlong\n\n\n208\n1.933\n49\nshort\n\n\n164\n3.500\n66\nshort\n\n\n211\n4.700\n80\nlong\n\n\n\n\n\n\n\n\n# Create the scatterplot between the dependent and independent variables\nax = sns.scatterplot(data=df, x=\"duration\", y=\"waiting\")\nax.set_xlabel(\"Duration (minutes)\")\nax.set_ylabel(\"Waiting (minutes)\")\n\nText(0, 0.5, 'Waiting (minutes)')\nComparing the duration of a the waiting time between eruptions.\n\n\n\n\n\n\n\n\n\n\n\nWhat questions or uncertainties remain?\n\nDoes a relationship mean that a longer eruption causes a longer wait? Or can I only say they go together?\nHow many eruptions are in this dataset? Is that enough to trust the pattern? I only looked at five rows.\nCollect more data from other geysers (perhaps other regions), to see whether the relationship is specific to this region.\nAdd additional variables to the analysis (time of day, season, temperature)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
