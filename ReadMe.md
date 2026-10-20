@@ -20,6 +20,11 @@ Below are opportunities for improvement and enhancement that we would expect mor
 - Triangulate results with additional analyses or methods
   - Add a regression analysis
   - Add a correlation analysis
+- Revise the figure so that the outcome (dependent) variable is on the y-axis and the predictor (independent) variable is on the x-axis.
+- Do spell check (or have an LLM check for grammar and spelling).
+- Give the y and x-asix titles a more thorough or elaborate description.
+- Elaborate on the meaning of each column, or give a data dictionary... or at the very least make a link to another dictionary that is out there some other place.
+- Report the number of observations in the memo.
 
 # Suggestions For Use By Instructors
 
